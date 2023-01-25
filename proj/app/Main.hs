@@ -94,6 +94,11 @@ main = do
 
   gr <- Gtk.radioButtonSetGroup but [but1, but2, but3]
 
+
+  select_message <- new Gtk.Label [#label := "Select one of the following strategies"]
+  Gtk.labelSetSelectable select_message True
+  #packStart box select_message False False 0
+
   #packStart box but False False 10
   #packStart box but1 False False 10
   #packStart box but2 False False 10
