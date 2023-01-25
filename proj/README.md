@@ -1,4 +1,4 @@
-# proj
+# Terms reduction
 
 ### Library installation
 
