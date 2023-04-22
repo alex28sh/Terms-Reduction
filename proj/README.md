@@ -17,3 +17,5 @@ Run this command from the proj directory
 There is an initial page.
 
 ![initial page](initial_screen.png)
+
+There is a text field for terms and choice of reduction type. You also can copy the examples of terms.
