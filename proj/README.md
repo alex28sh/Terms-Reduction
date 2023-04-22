@@ -14,8 +14,12 @@ Run this command from the proj directory
 
 ### How it looks like?
 
-There is an initial page.
+
+Here is an initial page.
 
 ![initial page](initial_screen.png)
 
 There is a text field for terms and choice of reduction type. You also can copy the examples of terms.
+
+Here is a result of work.
+![result](after_screen.png)
