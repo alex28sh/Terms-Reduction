@@ -11,3 +11,9 @@
 Run this command from the proj directory
 
 `stack run`
+
+### How it looks like?
+
+There is an initial page.
+
+![initial page](/initial_screen.png)
