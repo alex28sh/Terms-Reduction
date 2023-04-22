@@ -16,4 +16,4 @@ Run this command from the proj directory
 
 There is an initial page.
 
-![initial page](/initial_screen.png)
+![initial page](initial_screen.png)
