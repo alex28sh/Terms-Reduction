@@ -22,6 +22,8 @@ jobs:
         sudo apt-get install libgirepository1.0-dev libwebkit2gtk-4.0-dev libgtksourceview-3.0-dev
     - name: Go Into directory 
       run: cd proj
+    - name: Stack init
+      run: stack --resolver ghc-9.6.4 init --force
     - name: Configure the build
       run: stack build
     - name: Run tests
