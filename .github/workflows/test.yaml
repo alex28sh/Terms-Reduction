@@ -11,21 +11,21 @@ jobs:
 
     runs-on: ubuntu-20.04
     steps:
-	- uses: actions/checkout@v2
-	- name: Set up GHC 9.6.4
-	  uses: haskell-actions/setup@v2
-	with:
-	  ghc-version: '9.6.4' # Exact version of ghc to use
-	  # cabal-version: 'latest'. Omitted, but defaults to 'latest'
-	  enable-stack: true
-	  stack-version: 'latest'
-	- name: install dependencies 
-	  run: |
-		sudo apt-get install gobject-introspection
-		sudo apt-get install libgirepository1.0-dev libwebkit2gtk-4.0-dev libgtksourceview-3.0-dev
-	- name: Go Into directory 
-	  run: cd proj
-	- name: Configure the build
-	  run: stack build 
-	- name: Run tests
-	  run: stack test 
+    - uses: actions/checkout@v2
+    - name: Set up GHC 9.6.4
+      uses: haskell-actions/setup@v2
+    with:
+      ghc-version: '9.6.4' # Exact version of ghc to use
+      # cabal-version: 'latest'. Omitted, but defaults to 'latest'
+      enable-stack: true
+      stack-version: 'latest'
+    - name: install dependencies 
+      run: |
+        sudo apt-get install gobject-introspection
+        sudo apt-get install libgirepository1.0-dev libwebkit2gtk-4.0-dev libgtksourceview-3.0-dev
+    - name: Go Into directory 
+      run: cd proj
+    - name: Configure the build
+      run: stack build
+    - name: Run tests
+      run: stack test 
