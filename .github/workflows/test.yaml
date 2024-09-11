@@ -1,10 +1,9 @@
-
 name: Stack tests
 
 on:
   push:
     branches:
-      - master
+    - master
 
 jobs:
   build:
